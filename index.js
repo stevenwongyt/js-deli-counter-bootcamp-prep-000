@@ -1,3 +1,12 @@
+var count = 1
+
+function takeANumber() {
+  if (count === 99){
+    count = 1
+  }
+  return count++
+}
+
 function takeANumber (line, name) {
   line.push(name)
   return `Welcome, ${name}. You are number ${line.length} in line.`
